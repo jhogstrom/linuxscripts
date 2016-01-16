@@ -1,0 +1,7 @@
+# Source (or copy) this into .bashrc
+
+if [[ "$SHLVL" -eq "1"  &&  $- == *i* ]]; then
+        eval `ssh-agent`
+        ssh-add
+fi
+
